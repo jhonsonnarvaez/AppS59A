@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppS59A.AppPut"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Nombre: "/>
+            <Entry x:Name="txtNombre"/>
+            <Label Text="Apellido: "/>
+            <Entry x:Name="txtApellido"/>
+            <Label Text="Edad: "/>
+            <Entry x:Name="txtEdad"/>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Button Grid.Row="0" Grid.Column="0" Text="Actualizar"
+                        x:Name="btnActualizar"
+                        Clicked="btnActualizar_Clicked"
+                        ></Button>
+                <Button Grid.Row="0" Grid.Column="1" Text="Regresar"
+                        x:Name="btnRegresar"
+                        Clicked="btnRegresar_Clicked"></Button>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
